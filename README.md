@@ -12,9 +12,36 @@ Further details about the programs are provided below.
 ## Python programs for true weight enumerators
 
 ## Python program for weight enumerator estimates
+The variables `n` and `r` define the code RM$(n,r)$. The variable `weights` stores the final weight enumerator estimates. The lines
+```python
+def energy(weight_size, codeword):
+    sum = 0
+    for i in codeword:
+        sum+=i
+    return abs(weight_size-sum)
+```
+evaluate the energy function for the constant-weight constraint $E$ (see Example III.2 in the paper) for a given codeword and fixed weight. The line 
+```python
+Y += math.exp((-1)*(energy(weight_size,sampled_codeword))*(1/n))
+```
+is then used to obtain the random variable $X_{i,j}$ and add it to the sum of the already computed random variables $X_{i,k}, k < j$(see Section III.A of the paper).
 
 ## Julia program for weight enumerator estimates
-
+The variables `n` and `r` define the code RM$(n,r)$. The variable `weights` stores the final weight enumerator estimates. The lines
+```julia
+function energy(weight_size, codeword)
+    sum = 0
+    for i in codeword
+        sum+=i
+    end
+    return abs(weight_size-sum)
+end
+```
+evaluate the energy function for the constant-weight constraint $E$ (see Example III.2 in the paper) for a given codeword and fixed weight. The line 
+```julia
+Y = Y + exp((-1)*(energy(weight_size,sampled_codeword))*(1/n))\n
+```
+is then used to obtain the random variable $X_{i,j}$ and add it to the sum of the already computed random variables $X_{i,k}, k < j$(see Section III.A of the paper).
 ## MATLAB program for weight enumerator estimates
 The variables `n` and `r` define the code RM$(n,r)$. The variable `estimate` stores the final weight enumerator estimates. The m-file `genmatrix.m` is used as a subroutine to create the generator matrix of RM$(n,r)$. The lines
 ```matlab
