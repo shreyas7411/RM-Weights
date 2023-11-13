@@ -3,9 +3,9 @@ This repository contains computer code for the numerical computations of estimat
 
 This repository consists of 4 computer programs:
 
-1. Two Python programs (true_weight_enum_1.ipynb and true_weight_enum_2.ipynb) written by Shreyas Jain for computing the weight enumerators of RM codes using the algebraic techniques in Chapter 5 of D. Sarwate, “Weight enumeration of Reed-Muller codes and cosets,” PhD thesis, Princeton University, 1973
-2. A Python and a Julia program written by Shreyas Jain for computing weight enumerator estimates
-3. A MATLAB program (rm_sampling_matlab.m) for computing weight enumerator estimates
+1. Two Python programs (`true_weight_enum_1.ipynb` and `true_weight_enum_2.ipynb`) written by Shreyas Jain for computing the weight enumerators of RM codes using the algebraic techniques in Chapter 5 of D. Sarwate, “Weight enumeration of Reed-Muller codes and cosets,” PhD thesis, Princeton University, 1973
+2. A Python (`rm_sampling_python.ipynb`) and a Julia (`rm_sampling_julia.ipynb`) program written by Shreyas Jain for computing weight enumerator estimates
+3. A MATLAB program (`rm_sampling_matlab.m`) for computing weight enumerator estimates
 
 Further details about the programs are provided below.
 
