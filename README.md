@@ -27,7 +27,11 @@ Y += math.exp((-1)*(energy(weight_size,sampled_codeword))*(1/n))
 is then used to obtain the random variable $X_{i,j}$ and add it to the sum of the already computed random variables $X_{i,k}, k < j$(see Section III.A of the paper).
 
 ## Julia program for weight enumerator estimates
-The variables `n` and `r` define the code RM$(n,r)$. The variable `weights` stores the final weight enumerator estimates. The lines
+The variables `n` and `r` define the code RM$(n,r)$. The estimate corresponding to each weight size is not stored but only printed in the line
+```julia
+println(weight_size, samples_final, estimate)
+```
+The lines
 ```julia
 function energy(weight_size, codeword)
     sum = 0
