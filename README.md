@@ -27,7 +27,7 @@ su = su+exp(1)^((-1/width(g))*(abs(sum(c)-w)));
 ```
 is then used to obtain the random variable $X_{i,j}$ (see Section III.A of the paper).
 
-These lines should be suitably modified for other constraints of interest. For example, for the no-consecutive-ones constraint, the code ```abs(sum(c)-w)``` will be replaced with ```length(strfind(c,[1 1])).```
+These lines should be suitably modified for other constraints of interest. For example, for the no-consecutive-ones constraint, the code ```abs(sum(c)-w)``` will be replaced with ```length(strfind(c,[1 1]))```.
 
 Note that for selected lower weights, increasing the number of metropolis iterations in the Python and Julia programs for weight estimates may be necessary to obtain non-zero estimate values. Also, the Julia version is much faster than the Python one, with no functional differences. The MATLAB program for weight estimates is slower than in Python and Julia.
 
