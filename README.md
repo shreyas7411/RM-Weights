@@ -16,7 +16,7 @@ Further details about the programs are provided below.
 ## Julia program for weight enumerator estimates
 
 ## MATLAB program for weight enumerator estimates
-The variables `n` and `r` define the code RM$(n,r)$. The m-file `genmatrix.m` is used as a subroutine to create the generator matrix of RM$(n,r)$. The lines
+The variables `n` and `r` define the code RM$(n,r)$. The variable `estimate` stores the final weight enumerator estimates. The m-file `genmatrix.m` is used as a subroutine to create the generator matrix of RM$(n,r)$. The lines
 ```matlab
 cnt1 = abs(sum(c)-w);
 cnt2 = abs(sum(c1)-w);
