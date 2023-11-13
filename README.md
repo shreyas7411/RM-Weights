@@ -31,5 +31,3 @@ These lines should be suitably modified for other constraints of interest. For e
 
 Note that for selected lower weights, increasing the number of metropolis iterations in the Python and Julia programs for weight estimates may be necessary to obtain non-zero estimate values. Also, the Julia version is much faster than the Python one, with no functional differences. The MATLAB program for weight estimates is slower than in Python and Julia.
 
-Also note that by a simple change to the energy functions in the weight estimator programs, we can obtain size estimates of more general constrained subcodes of Reed-Muller codes.
-
