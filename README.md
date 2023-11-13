@@ -1,4 +1,4 @@
-## Sampling-Based-Estimates-of-the-Sizes-of-Constrained-Subcodes-of-Reed-Muller-Codes
+# Sampling-Based-Estimates-of-the-Sizes-of-Constrained-Subcodes-of-Reed-Muller-Codes
 This repository contains computer code for the numerical computations of estimates of weight enumerators of Reed-Muller (RM) codes in the paper: V. A. Rameshwar, S. Jain, and N. Kashyap, “Sampling-Based Estimates of the Sizes of Constrained Subcodes of Reed-Muller Codes”, <i>arXiv e-prints</i>, 2023. doi:10.48550/arXiv.2309.08907.
 
 This repository consists of 4 computer programs:
@@ -9,13 +9,13 @@ This repository consists of 4 computer programs:
 
 Further details about the programs are provided below.
 
-# Python programs for true weight enumerators
+## Python programs for true weight enumerators
 
-# Python program for weight enumerator estimates
+## Python program for weight enumerator estimates
 
-# Julia program for weight enumerator estimates
+## Julia program for weight enumerator estimates
 
-# MATLAB program for weight enumerator estimates
+## MATLAB program for weight enumerator estimates
 The variables `n` and `r` define the code RM$(n,r)$. The m-file `genmatrix.m` is used as a subroutine to create the generator matrix of RM$(n,r)$. The lines
 ```matlab
 cnt1 = abs(sum(c)-w);
