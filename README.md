@@ -1,7 +1,7 @@
 # Sampling-Based Estimates of the Sizes of Constrained Subcodes of Reed-Muller Codes
 This repository contains computer code for the numerical computations of estimates of weight enumerators of Reed-Muller (RM) codes in the paper: V. A. Rameshwar, S. Jain, and N. Kashyap, “Sampling-Based Estimates of the Sizes of Constrained Subcodes of Reed-Muller Codes”, <i>arXiv e-prints</i>, 2023. doi:10.48550/arXiv.2309.08907.
 
-This repository consists of 4 computer programs:
+This repository consists of 5 computer programs:
 
 1. Two Python programs (`true_weight_enum_1.ipynb` and `true_weight_enum_2.ipynb`) written by Shreyas Jain for computing the weight enumerators of RM codes using the algebraic techniques in Chapter 5 of D. Sarwate, “Weight enumeration of Reed-Muller codes and cosets,” PhD thesis, Princeton University, 1973
 2. A Python (`rm_sampling_python.ipynb`) and a Julia (`rm_sampling_julia.ipynb`) program written by Shreyas Jain for computing weight enumerator estimates
