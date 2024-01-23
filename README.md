@@ -1,5 +1,5 @@
 # Sampling-Based Estimates of the Sizes of Constrained Subcodes of Reed-Muller Codes
-This repository contains computer code for the numerical computations of estimates of weight enumerators of Reed-Muller (RM) codes in the paper: V. A. Rameshwar, S. Jain, and N. Kashyap, “Sampling-Based Estimates of the Sizes of Constrained Subcodes of Reed-Muller Codes”, <i>arXiv e-prints</i>, 2023. doi:10.48550/arXiv.2309.08907.
+This repository contains computer code for the numerical computations of estimates of weight enumerators of Reed-Muller (RM) codes.
 
 This repository consists of 5 computer programs:
 
@@ -21,7 +21,7 @@ def energy(weight_size, codeword):
         sum+=i
     return abs(weight_size-sum)
 ```
-evaluate the energy function for the constant-weight constraint $E$ (see Example III.2 in the paper) for a given codeword and fixed weight. The line 
+evaluate the energy function for the constant-weight constraint $E$ for a given codeword and fixed weight. The line 
 ```python
 Y += math.exp((-1)*(energy(weight_size,sampled_codeword))*(1/n))
 ```
@@ -42,7 +42,7 @@ function energy(weight_size, codeword)
     return abs(weight_size-sum)
 end
 ```
-evaluate the energy function for the constant-weight constraint $E$ (see Example III.2 in the paper) for a given codeword and fixed weight. The line 
+evaluate the energy function for the constant-weight constraint $E$ for a given codeword and fixed weight. The line 
 ```julia
 Y = Y + exp((-1)*(energy(weight_size,sampled_codeword))*(1/n))\n
 ```
@@ -53,11 +53,11 @@ The variables `n` and `r` define the code RM$(n,r)$. The variable `estimate` sto
 cnt1 = abs(sum(c)-w);
 cnt2 = abs(sum(c1)-w);
 ```
-evaluate the energy function for the constant-weight constraint $E$ (see Example III.2 in the paper) at the codewords c and c1, respectively. In `rm_sampling_matlab.m`, the line 
+evaluate the energy function for the constant-weight constraint $E$ at the codewords c and c1, respectively. In `rm_sampling_matlab.m`, the line 
 ```matlab
 su = su+exp(1)^((-1/width(g))*(abs(sum(c)-w)));
 ```
-is then used to obtain the random variable $X_{i,j}$ (see Section III.A of the paper).
+is then used to obtain the random variable $X_{i,j}$.
 
 These lines should be suitably modified for other constraints of interest. For example, for the no-consecutive-ones constraint, the code ```abs(sum(c)-w)``` will be replaced with ```length(strfind(c,[1 1]))```.
 
