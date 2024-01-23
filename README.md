@@ -25,7 +25,7 @@ evaluate the energy function for the constant-weight constraint $E$ for a given 
 ```python
 Y += math.exp((-1)*(energy(weight_size,sampled_codeword))*(1/n))
 ```
-is then used to obtain the random variable $X_{i,j}$ and add it to the sum of the already computed random variables $X_{i,k}, k < j$(see Section III.A of the paper).
+is then used to obtain the random variable $X_{i,j}$ and add it to the sum of the already computed random variables $X_{i,k}, k < j$.
 
 ## Julia program for weight enumerator estimates
 The variables `n` and `r` define the code RM$(n,r)$. The estimate corresponding to each weight size is not stored but only printed in the line
@@ -46,7 +46,7 @@ evaluate the energy function for the constant-weight constraint $E$ for a given 
 ```julia
 Y = Y + exp((-1)*(energy(weight_size,sampled_codeword))*(1/n))\n
 ```
-is then used to obtain the random variable $X_{i,j}$ and add it to the sum of the already computed random variables $X_{i,k}, k < j$(see Section III.A of the paper).
+is then used to obtain the random variable $X_{i,j}$ and add it to the sum of the already computed random variables $X_{i,k}, k < j$.
 ## MATLAB programs for weight enumerator estimates and weight spectrum
 The variables `n` and `r` define the code RM$(n,r)$. The variable `estimate` stores the final weight enumerator estimates. The m-file `genmatrix.m` is used as a subroutine to create the generator matrix of RM$(n,r)$. The lines
 ```matlab
